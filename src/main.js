@@ -10,7 +10,7 @@ app.use(express.static('public'))
 app.get('/', async (req, res) => {
     const { data } = await axios.get('https://coronavirus-19-api.herokuapp.com/countries')
 
-    res.render('index', { countrieList: data })
+    res.render('index', { countryList: data })
 })
 
 app.get('/:countryName', async (req, res) => {
