@@ -1,11 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body > h2 {
+text-align:center;
+margin-top: 5px;
+}
+
+a {
+    margin-left: 50px;
+    display: block;
+
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
 ul {
     list-style: none;
 }
 
-li span {
-    display: inline-block;
-    padding: 15px 10px;
+form {
+    width: 20%;
+    margin: 50px auto;
+}
 
-    border: 1px solid #000;
-    border-radius: 4px;
+input {
+    width: 100%;
+    padding: 15px;
+}
+
+.container-block {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+    
+    border: none;
+}
+
+.container-block h2 {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 0 5px;
+}
+
+li div.container {
+   border: 1px solid #000;
+   border-radius: 2px;
+   padding: 20px;
+
+   width: 50%;
+   margin: 0 auto;
+}
+
+li div:not(.container) {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+li div.title {
+    font-weight: bold;
+}
+
+li {
+    margin: 10px;
 }

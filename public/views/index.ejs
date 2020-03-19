@@ -9,16 +9,31 @@
 </head>
 
 <body>
+    <h2>Corona Search</h2>
+
+    <form>
+        <input type="text" name="nameCountry" placeholder="Search for one specific country">
+    </form>
+
     <ul>
         <% countrieList.forEach(function({ country, cases, active, deaths }) { %>
         <li>
-            <span><%= country %></span>
-            <span><%= cases %></span>
-            <span><%= active %></span>
-            <span><%= deaths %></span>
+            <div class="container container-block">
+                <h2>Country</h2>
+                <h2>Cases</h2>
+                <h2>Active Cases</h2>
+                <h2>Deaths</h2>
+            </div>
+            <div class="container">
+                <div class="title"><%= country %></div>
+                <div><%= cases %></div>
+                <div><%= active %></div>
+                <div><%= deaths %></div>
+            </div>
         </li>
         <% }) %>
     </ul>
+    <script src="../script/filter.js"></script>
 </body>
 
 </html>
